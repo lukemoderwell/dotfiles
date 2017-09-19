@@ -1,0 +1,9 @@
+# Video Editting
+compresssMP4 () {
+  ffmpeg -i $1 -vcodec h264 -acodec mp2 $2 echo -e "compression complete. \n$2 created."
+}
+
+firstFrame() {
+  ffmpeg -i $1 -vf "select=eq(n\,0)" $2.jpg
+  echo -e "created $2.jpg"
+}

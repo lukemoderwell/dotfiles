@@ -1,0 +1,33 @@
+[user]
+  name = Luke Moderwell
+  email = luke.moderwell@gmail.com
+[github] 
+  user = lukemoderwell
+        
+[core]
+  excludesfile = ~/.gitignoreg
+
+[alias]
+  pr = "!f() { git fetch $1 pull/$2/head:pull/$2 && git checkout pull/$2; }; f"
+  pretty-log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[push]
+  default = simple
+
+[credential]
+  helper = osxkeychain
+
+[filter "media"]	
+  clean = git media clean %f
+  smudge = git media smudge %f
+  required = true
+
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+
+[filter "lfs"]
+  clean = git lfs clean %f
+  smudge = git lfs smudge %f
+  required = true
