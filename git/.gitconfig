@@ -6,10 +6,16 @@
         
 [core]
   excludesfile = ~/.gitignoreg
+  autocrlf = input
 
 [alias]
   pr = "!f() { git fetch $1 pull/$2/head:pull/$2 && git checkout pull/$2; }; f"
   pretty-log = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  leaderboard = shortlog -sn --all --no-merges
+  recent = for-each-ref --count=3 --sort=-committerdate refs/heads/ --format=\"%(refname:short)\"
+  today = log --since=00:00:00 --all --no-merges --oneline --author=luke.moderwell@gmail.com
+  recap = log --all --oneline --no-merges --author=luke.moderwell@gmail.com
+  graph = log --graph --all --decorate --stat --date=iso
 
 [push]
   default = simple
