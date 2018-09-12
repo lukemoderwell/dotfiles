@@ -1,6 +1,6 @@
 [user]
-  name = Luke Moderwell
-  email = luke.moderwell@gmail.com
+	name = Luke Moderwell
+	email = luke.moderwell@gmail.com
 [github] 
   user = lukemoderwell
         
@@ -37,3 +37,6 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+
+[commit]
+  template = ~/.gitmessage
