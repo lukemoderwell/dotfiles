@@ -1,21 +1,12 @@
+# Quick Source
+alias ...='source ~/.bash_profile'
+# bat > cat
+alias cat=bat
+# better reverse search (ctrl+r)
+alias preview="fzf --preview 'bat--color \"always\" {}'"
+# Jekyll
+alias jstart='bundle exec jekyll serve'
+alias be='bundle exec'
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true killall Finder"
-
-# Crossroads Helpers
-alias maestro='cd /Users/lukemoderwell/Desktop/crds/crds-maestro/apps/crossroads_interface'
-alias legacy='cd /Users/lukemoderwell/Desktop/crds/crds-angular/crossroads.net'
-alias styleguide='cd /Users/lukemoderwell/Desktop/crds/crds-styleguide'
-alias styles='cd /Users/lukemoderwell/Desktop/crds/crds-styles'
-alias connect='cd /Users/lukemoderwell/Desktop/crds/crds-connect'
-alias cms='cd /Applications/MAMP/cms/www'
-
-# Start Phoenix
-alias pstart='mix phoenix.server'
-
-# Start Jekyll
-alias jstart='bundle exec jekyll serve'
-
-# Reload
-alias ...='source ~/.bash_profile'
-
