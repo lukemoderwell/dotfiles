@@ -9,17 +9,23 @@ brew upgrade
 # Install packages 
   apps=(
     bash-completion
-    bats
+    bat
     coreutils
+    direnv
     ffmpeg
+    fzf
     gifsicle
     git
     grep
     icu4c
     imagemagick
+    jpeg
+    lame
     node
     python
     ruby
+    tldr
+    tmux
     vim
     wget
     wifi-password
