@@ -7,6 +7,7 @@ brew tap caskroom/cask
 
 # Install packages
   apps=(
+    airtable
     alfred
     caret
     dropbox
@@ -19,7 +20,6 @@ brew tap caskroom/cask
     spotify
     toggl
     vscode
-    virtualbox
   )
 
   brew cask install "${apps[@]}"
