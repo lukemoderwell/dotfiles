@@ -14,7 +14,6 @@ brew tap caskroom/cask
     firefox
     hyper
     google-chrome
-    magnet
     sketch
     slack
     spotify
