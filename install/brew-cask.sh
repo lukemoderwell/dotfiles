@@ -18,7 +18,7 @@ brew tap caskroom/cask
     slack
     spotify
     toggl
-    vscode
+    visual-studio-code
   )
 
   brew cask install "${apps[@]}"
