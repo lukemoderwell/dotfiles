@@ -14,12 +14,11 @@ brew tap caskroom/cask
     firefox
     hyper
     google-chrome
-    magnet
     sketch
     slack
     spotify
     toggl
-    vscode
+    visual-studio-code
   )
 
   brew cask install "${apps[@]}"
