@@ -16,6 +16,7 @@
   today = log --since=00:00:00 --all --no-merges --oneline --author=luke.moderwell@gmail.com
   recap = log --all --oneline --no-merges --author=luke.moderwell@gmail.com
   graph = log --graph --all --decorate --stat --date=iso
+  files = log --name-status -10 path/to/dir
 
 [push]
   default = simple
