@@ -11,7 +11,6 @@ brew tap caskroom/cask
     alfred
     caret
     dropbox
-    firefox
     hyper
     google-chrome
     sketch
