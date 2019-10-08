@@ -10,7 +10,7 @@ set wrap            " wordwrapping
 set linebreak       " break lines at explicit enters
 
 " UI Config
-colorscheme srcery  " Srcery color scheme
+" colorscheme srcery  " Srcery color scheme
 set number          " show line numbers
 set relativenumber  " show numbers relative to current line
 set cursorline      " highlight current line
