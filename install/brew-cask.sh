@@ -11,11 +11,13 @@ brew tap caskroom/cask
     alfred
     caret
     dropbox
+    figma
     hyper
     google-chrome
     sketch
     slack
     spotify
+    timing
     toggl
     visual-studio-code
   )
