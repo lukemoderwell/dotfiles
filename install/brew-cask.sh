@@ -10,7 +10,6 @@ brew tap caskroom/cask
     airtable
     alfred
     caret
-    dropbox
     figma
     hyper
     google-chrome
