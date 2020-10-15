@@ -18,3 +18,15 @@ movToMP4() {
   ffmpeg -i $1 -vcodec copy -acodec copy $2.mp4
   echo -e "\n$1 converted to MP$"
 }
+
+fixHost() {
+  #!/bin/bash
+  if grep -q '.150' /etc/hosts
+  then
+      sudo sed -i '' 's/.150/.101/1' /etc/hosts
+      echo 'IP addresses in /etc/hosts all switched to .101'
+  else
+      sudo sed -i '' 's/.101/.150/1' /etc/hosts
+      echo 'IP addresses in /etc/hosts all switched to .150'
+  fi
+}
