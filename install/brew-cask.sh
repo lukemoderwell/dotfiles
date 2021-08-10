@@ -26,4 +26,4 @@ brew tap caskroom/cask
     visual-studio-code
   )
 
-  brew cask install "${apps[@]}"
+  brew install --cask "${apps[@]}"
