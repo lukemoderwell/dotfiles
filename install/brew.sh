@@ -26,6 +26,7 @@ brew upgrade
     ruby
     tldr
     tmux
+    vagrant
     vim
     wget
     wifi-password
