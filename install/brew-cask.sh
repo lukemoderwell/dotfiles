@@ -22,7 +22,7 @@ brew tap caskroom/cask
     smallpdf
     slack
     spotify
-    toggl
+    toggl-track
     visual-studio-code
   )
 
