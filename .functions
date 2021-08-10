@@ -19,8 +19,12 @@ movToMP4() {
   echo -e "\n$1 converted to MP$"
 }
 
+videoToGif() {
+  ffmpeg -i "$1" "${1%.*}.gif" && gifsicle -O3 "${1%.*}.gif" -o "${1%.*}.gif" && osascript -e "display notification \"${1%.*}.gif successfully converted and saved\" with title \"MOV2GIF SUCCESS!\""
+}
+
+# MC Dev Env
 fixHost() {
-  #!/bin/bash
   if grep -q '.150' /etc/hosts
   then
       sudo sed -i '' 's/.150/.101/1' /etc/hosts

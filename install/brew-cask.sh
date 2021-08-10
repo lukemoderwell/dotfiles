@@ -9,14 +9,19 @@ brew tap caskroom/cask
   apps=(
     airtable
     alfred
-    caret
-    figma
-    hyper
+    coconutbattery
+    figmac
+    firefox
     google-chrome
-    sketch
+    lastpass
+    loom
+    miro
+    obsidian
+    postman
+    sip
+    smallpdf
     slack
     spotify
-    timing
     toggl
     visual-studio-code
   )
