@@ -10,7 +10,7 @@ brew tap caskroom/cask
     airtable
     alfred
     coconutbattery
-    figmac
+    figma
     firefox
     google-chrome
     lastpass
