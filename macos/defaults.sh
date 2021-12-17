@@ -14,7 +14,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool true
 defaults write com.apple.dock autohide -bool true
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string “$HOME/Desktop”
+defaults write com.apple.screencapture location -string “$HOME/Downloads”
 
 # Save screenshots in JPG format (other options: BMP, GIF, JPG, PDF, TIFF)
 defaults write com.apple.screencapture type -string “jpg”
