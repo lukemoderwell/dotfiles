@@ -13,11 +13,10 @@ brew tap caskroom/cask
     figma
     firefox
     google-chrome
+    iterm2
     lastpass
     loom
-    miro
     obsidian
-    postman
     sip
     smallpdf
     slack
