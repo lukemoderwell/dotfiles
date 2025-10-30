@@ -1,4 +1,9 @@
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
 [user]
+	signingkey = /Users/lukemoderwell/.ssh/id_ed25519.pub
 	name = Luke Moderwell
 	email = luke.moderwell@gmail.com
 [github] 
@@ -17,6 +22,7 @@
   recap = log --all --oneline --no-merges --author=luke.moderwell@gmail.com
   graph = log --graph --all --decorate --stat --date=iso
   files = log --name-status -10 path/to/dir
+  clean-up = !git fetch --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
 
 [push]
   default = simple
@@ -41,6 +47,7 @@
   clean = git lfs clean %f
   smudge = git lfs smudge %f
   required = true
+	process = git-lfs filter-process
 
-[commit]
-  template = ~/.gitmessage
+# [commit]
+#   template = ~/.gitmessage
